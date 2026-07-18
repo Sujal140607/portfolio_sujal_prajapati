@@ -44,3 +44,5 @@ vite.config.ts.timestamp-*
 
 vite-output.log
 *.log
+
+.dockerignore
