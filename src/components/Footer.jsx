@@ -3,9 +3,9 @@ import { ArrowUp } from 'lucide-react';
 const footerLinks = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
+  { label: 'Showcase', href: '#showcase' },
   { label: 'Projects', href: '#projects' },
-  { label: 'Experience', href: '#experience' },
+  { label: 'Services', href: '#services' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -21,11 +21,11 @@ export default function Footer() {
           <div>
             <a href="#home" className="text-2xl font-bold font-satoshi gradient-text">SP</a>
             <p className="text-sm text-text-secondary mt-3 max-w-xs leading-relaxed">
-              AI Engineer & Full Stack Developer building intelligent products that solve real problems.
+              Building modern websites & AI-powered solutions for startups, businesses, and entrepreneurs.
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-6 justify-center">
+          <div className="flex flex-nowrap gap-6 justify-center">
             {footerLinks.map((link) => (
               <a
                 key={link.label}
@@ -50,10 +50,10 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-text-muted">
-            &copy; 2026 Sujal Prajapati. All Rights Reserved.
+            &copy; 2026 Sujal Prajapati. Crafted with passion and modern web technologies.
           </p>
           <p className="text-xs text-text-muted">
-            Built with AI
+            Built with React • Tailwind • Framer Motion
           </p>
         </div>
       </div>
