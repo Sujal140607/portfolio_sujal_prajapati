@@ -24,35 +24,35 @@ export default function Hero() {
   const y = useTransform(scrollYProgress, [0, 1], [0, 150]);
 
   return (
-    <section id="home" ref={sectionRef} className="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden">
+    <section id="home" ref={sectionRef} className="relative min-h-screen flex items-center pt-24 sm:pt-28 lg:pt-32 pb-16 sm:pb-20 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-accent-orange/[0.04] via-accent-purple/[0.02] to-transparent pointer-events-none" />
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[900px] h-[900px] bg-accent-purple/5 rounded-full blur-[150px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 w-full relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 w-full relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
           <motion.div
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="relative z-10"
+            className="relative z-10 text-center lg:text-left"
           >
-            <motion.div variants={itemVariants} className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-card-light mb-8">
+            <motion.div variants={itemVariants} className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-card-light mb-6 sm:mb-8 mx-auto lg:mx-0">
               <span className="w-2 h-2 rounded-full bg-accent-orange animate-pulse" />
               <span className="text-xs text-text-secondary font-inter tracking-wider uppercase">AI Engineer & Full Stack Developer</span>
             </motion.div>
 
-            <motion.h1 variants={itemVariants} className="display-heading mb-8">
+            <motion.h1 variants={itemVariants} className="display-heading mb-6 sm:mb-8">
               Building{' '}
               <span className="gradient-text">AI-Powered</span>
               <br />
               Products That Solve Real Problems
             </motion.h1>
 
-            <motion.p variants={itemVariants} className="text-lg md:text-xl text-text-secondary font-inter leading-relaxed max-w-xl mb-10">
+            <motion.p variants={itemVariants} className="text-base sm:text-lg md:text-xl text-text-secondary font-inter leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8 sm:mb-10">
               AI Engineer & Full Stack Developer | Building AI Agents, RAG Applications, and Intelligent Automation Systems
             </motion.p>
 
-            <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
+            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a href="#showcase" className="magnetic-btn magnetic-btn-primary group">
                 View Projects
                 <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
@@ -68,9 +68,9 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className="relative flex items-center justify-center"
+            className="relative flex items-center justify-center mt-10 lg:mt-0"className="relative flex items-center justify-center mt-10 lg:mt-0"
           >
-            <motion.div style={{ y }} className="relative w-[420px] h-[420px] md:w-[520px] md:h-[520px]">
+            <motion.div style={{ y }} className="relative w-[300px] h-[300px] sm:w-[380px] sm:h-[380px] md:w-[460px] md:h-[460px] lg:w-[520px] lg:h-[520px]">
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-accent-orange/20 via-accent-purple/15 to-accent-pink/10 blur-3xl" />
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-accent-orange/5 via-accent-purple/5 to-transparent blur-2xl animate-pulse" style={{ animationDuration: '4s' }} />
 
@@ -92,7 +92,7 @@ export default function Hero() {
               </svg>
 
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative w-44 h-44 md:w-52 md:h-52">
+                <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52">
                   <div className="absolute inset-0 bg-gradient-to-br from-accent-orange/20 via-accent-purple/20 to-accent-pink/20 rounded-full blur-3xl" />
                   <svg viewBox="0 0 200 200" className="w-full h-full relative z-10">
                     <defs>
