@@ -25,7 +25,7 @@ export default function LoadingScreen({ onComplete }) {
       className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-dark"
     >
       <div ref={textRef} className="flex flex-col items-center gap-6">
-        <span className="text-4xl font-bold font-satoshi gradient-text"></span>
+        <span className="text-4xl font-bold font-satoshi gradient-text">Welcome</span>
         <div className="w-40 h-[2px] bg-white/10 rounded-full overflow-hidden">
           <div ref={barRef} className="h-full w-0 bg-gradient-to-r from-accent-orange via-accent-purple to-accent-pink rounded-full" />
         </div>

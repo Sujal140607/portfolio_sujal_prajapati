@@ -53,13 +53,13 @@ export default function Hero() {
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
-              <a href="#projects" className="magnetic-btn magnetic-btn-primary group">
+              <a href="#showcase" className="magnetic-btn magnetic-btn-primary group">
                 View Projects
                 <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </a>
-              <a href="/resume.pdf" className="magnetic-btn magnetic-btn-secondary group" target="_blank" rel="noopener noreferrer">
+              <a href="#services" className="magnetic-btn magnetic-btn-secondary group" target="_blank" rel="noopener noreferrer">
                 <Download size={18} className="mr-2" />
-                Download Resume
+                Our Services
               </a>
             </motion.div>
           </motion.div>

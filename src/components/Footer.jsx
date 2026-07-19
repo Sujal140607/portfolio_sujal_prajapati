@@ -19,13 +19,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-3 gap-10 items-center">
           <div>
-            <a href="#home" className="text-2xl font-bold font-satoshi gradient-text">SP</a>
+            <a href="#home" className="text-2xl font-bold font-satoshi gradient-text">Sujal Prajapati</a>
             <p className="text-sm text-text-secondary mt-3 max-w-xs leading-relaxed">
               Building modern websites & AI-powered solutions for startups, businesses, and entrepreneurs.
             </p>
           </div>
 
-          <div className="flex flex-nowrap gap-6 justify-center">
+          <div className="flex flex-wrap gap-6 justify-center">
             {footerLinks.map((link) => (
               <a
                 key={link.label}
